@@ -7,7 +7,7 @@ This README gives a short overview. For more information refer to the [wiki](htt
 # Planner installation and execution
 
 To run the current version, compile the package nbvplanner. To get it navigate to the source folder of your ros workspace:
-
+ 
 ```sh
 git clone https://github.com/ethz-asl/nbvplanner.git
 cd nbvplanner
@@ -21,6 +21,7 @@ Moreover, make sure you have all the necessary libraries:
 ```sh
 apt-get install ros-<distro>-octomap-*
 apt-get install python-catkin-tools
+apt-get install ros-<distro>-mav-msgs
 catkin build
 ```
 
@@ -30,7 +31,7 @@ For a simulation demo launch
 roslaunch interface_nbvp_rotors flat_exploration.launch
 ```
 
-Tested under ROS Indigo and Jade.
+Tested under ROS Melodic.
 
 Further instructions for the visualization of the exploration progress, as well as more demo scenarios and descriptions of the parameters can be found in the [wiki](https://github.com/ethz-asl/nbvplanner/wiki).
 
