@@ -9,7 +9,7 @@ This README gives a short overview. For more information refer to the [wiki](htt
 To run the current version, compile the package nbvplanner. To get it navigate to the source folder of your ros workspace:
  
 ```sh
-git clone https://github.com/ethz-asl/nbvplanner.git
+git clone https://github.com/lkova/nbvplanner.git
 cd nbvplanner
 git submodule init --
 git submodule sync --recursive
@@ -22,6 +22,9 @@ Moreover, make sure you have all the necessary libraries:
 apt-get install ros-<distro>-octomap-*
 apt-get install python-catkin-tools
 apt-get install ros-<distro>-mav-msgs
+apt-get install libgflags-dev
+
+catkin config --cmake-args -DCMAKE_BUILD_TYPE=Release
 catkin build
 ```
 
