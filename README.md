@@ -23,6 +23,7 @@ apt-get install ros-<distro>-octomap-*
 apt-get install python-catkin-tools
 apt-get install ros-<distro>-mav-msgs
 apt-get install libgflags-dev
+sudo apt install libgoogle-glog-dev 
 
 catkin config --cmake-args -DCMAKE_BUILD_TYPE=Release
 catkin build
